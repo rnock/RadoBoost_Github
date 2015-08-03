@@ -1,0 +1,11 @@
+// Description of features for banknote
+
+@FIT_CLASS,NONE
+
+A1,CONTINUOUS
+A2,CONTINUOUS
+A3,CONTINUOUS
+A4,CONTINUOUS
+BN,CLASS
+
+

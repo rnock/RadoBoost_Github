@@ -1,0 +1,20 @@
+//Directory where to find domains
+@DIRECTORY,Datasets
+
+//Domain prefix name
+@PREFIX,ionosphere 
+
+//Max value for RADOS
+@MAX_RADO_SIZE,1000
+
+//Algorithms
+// If AdaBoost: Iters Mu Weight #Sample 
+// If RadoBoost: Iters Mu Weight #Sample Method
+// #Sample = size of training: "All" = all (forbidden for Radoboost),
+//                                            "Max" = MAX_RADO_SIZE,
+//                                            "Exactly" + Number = thisnumber
+ 
+@ALGORITHM,@AdaBoost,1000,0,0,@ALL
+@ALGORITHM,@AdaBoost,1000,0,1,@ALL
+@ALGORITHM,@RadoBoost,1000,0,0,@MAX,@RANDOM
+@ALGORITHM,@RadoBoost,1000,0,1,@MAX,@RANDOM
